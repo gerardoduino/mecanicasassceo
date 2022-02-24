@@ -1,0 +1,87 @@
+/*IMPORT*/
+
+@import "bootstrap/bootstrap.scss";
+
+
+.servicios {
+    padding: 6%;
+}
+
+.separacion {
+    margin-top: 5%;
+}
+
+/*VARIABLES*/
+
+$tamaño: 100%;
+
+
+/*ANIDAMIENTO*/
+
+.mapa {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+    position: absolute;
+    top:0;
+    left: 10;
+    width: $tamaño;
+    height: $tamaño;
+}
+}
+
+
+/*MAPS*/
+
+$trabajos:(
+    mantenimiento: red,
+    electronica: blue, 
+    suspencion: pink, 
+    encendido: rgb(0, 183, 255), 
+    frenos: grey, 
+    mecanicaGral: rgb(153, 112, 0), 
+    trenDelantero: rgb(166, 0, 172), 
+    climatizacion: rgb(107, 255, 210), 
+
+);
+
+@each $nombres, $color in $trabajos {
+
+    .seccionServicios-#{$nombres} {
+        background-color: $color;
+        
+    }
+}
+
+/*MIXINS*/
+
+@mixin letra ($colores, $fondo) {
+    background-color: $fondo;
+    color: $colores;
+}
+
+.nombre {
+    @include letra(white, rgb(197, 197, 197));
+}
+
+.correo {
+    @include letra(white, rgb(197, 197, 197));
+}
+
+.telefono {
+    @include letra(white, rgb(197, 197, 197));
+}
+
+.mensaje {
+    @include letra(white, rgb(197, 197, 197));
+}
+
+/*EXTEND*/
+
+.iframe-prueba {
+    @extend iframe;
+    left:0;
+}

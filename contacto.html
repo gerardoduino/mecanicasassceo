@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo -->
+    <!-- keywords -->
+    <meta name="keywords" content="Contacto, Telefono, Correo, Mensaje, Direccion, Nombre">
+    <!-- title -->
+    <title>Contacto | Mecánica JS</title>
+    <!-- description -->
+    <meta name="description" content="Contactese con nosotros, Asesoramientos, Presupuestos, Info de Servicios, Turnos y más.">
+    <!-- favicon -->
+    <link rel="icono de acceso directo" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/destino.css">
+    <!-- Estilo de Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+     <!-- menu -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">s
+          <a class="navbar-brand animate__animated animate__pulse" href="index.html">
+            <img src="./img/logo nav.png" alt="..." height="40">Mecánica JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__pulse" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__pulse" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__pulse" href="dondeestamos.html">Dónde Estamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__pulse" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- seccion contacto -->
+<div class="container px-5 my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 rounded-3 shadow-lg">
+          <div class="card-body p-4">
+            <div class="text-center">
+              <div class="h1 fw-light">Contactato</div>
+              <p class="mb-4 text-muted">Complete el formulario para solicitar un turno.</p>
+            </div>
+
+           
+  
+              <!-- Nombre -->
+              <div class="form-floating mb-3 nombre">
+                <input class="form-control nombre" id="name" type="name" placeholder="name" data-sb-validations="required" />
+                <label for="name">Nombre</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">ingrese un nombre.</div>
+              </div>
+  
+              <!-- Correo -->
+              <div class="form-floating mb-3 correo">
+                <input class="form-control correo" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                <label for="emailAddress">Correo</label>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">ingrese un correo electronico.</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">el correo electronico ingresado no es valido.</div>
+              </div>
+
+              <!-- Telefono -->
+              <div class="form-floating mb-3 telefono">
+                <input class="form-control telefono" id="telefono" type="text" placeholder="telefono" data-sb-validations="required" />
+                <label for="name">Telefono</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">ingrese un numero de telefono.</div>
+              </div>
+  
+              <!-- Mensaje -->
+              <div class="form-floating mb-3 mensaje">
+                <textarea class="form-control mensaje" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                <label for="message">Mensaje</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">ingrese un mensaje.</div>
+              </div>
+  
+              <!-- Enviar -->
+              <div class="d-grid">
+                <button class="btn btn-primary btn-lg bg-dark " id="submitButton" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- footer -->
+      <div class="b-example-divider"></div>
+      <div class="container-fluid bg-dark">
+        <footer class="container-fluid py-4 my-8">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
+            <li class="nav-item"><a href="dondeestamos.html" class="nav-link px-2 text-muted">Dónde Estamos</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 | Mecánica JS</p>
+        </footer>
+      </div>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
